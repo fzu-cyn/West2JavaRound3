@@ -21,11 +21,7 @@ public class JDBC {
         return conn;
     }
 
-
-
     private static Data data;
-
-
 
     //关闭
     public static void close(PreparedStatement pstmt) {
@@ -64,5 +60,8 @@ public class JDBC {
     //获得数据库连接池
     public static Data getData(){
         return data;
+    }
+
+    public void InsertintoAll(String k, Integer confirmed, Integer recovered, Integer deaths) {
     }
 }
